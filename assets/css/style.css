@@ -111,8 +111,25 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-
-
+h1{
+  font-size: 16px;
+  font-weight: bold;
+}
+h1 a{ color: #666469;}
+.navbar1{
+  background-color: #666469;
+}
+.navbar1 ul{
+  float: right;
+  margin-right: 5%;
+}
+.navbar1 ul li{
+  display: inline-block;
+}
+.navbar2{
+  display: flex;
+  background-color: #3361b6;
+}
 
 
 
