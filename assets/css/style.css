@@ -118,30 +118,61 @@ header .wrapper{
 .navbar1{
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 10px 0;
   background-color:#fffdff;
+  text-transform: capitalize;
+}
+nav li:nth-child(5){
+  text-transform: uppercase;
+}
+.navbar1 h1{
+  font-weight:bold;
+  font-size: 18px;
+}
+.search_cart_icons ul {
+  display: flex;
+  justify-content: space-between;
 }
 .navbar1 nav ul{
   display: flex;
   justify-content: space-between;
 }
-.navbar1 nav {
-  flex-basis: 90%;
+.search_cart_icons a {
+  color:black;
+  text-indent: -9999px;
 }
-.navbar1 a{
-  color: #656366;
+.search_cart_icons a::before {
+  padding: 4px;
+  border-radius: 50%;
+  font-family: "FontAwesome";
+  font-size: 10px;
+  float: right;
+  text-indent: 0;
 }
+.search_cart_icons li:nth-child(1) a::before { content: '\f002'; }
+.search_cart_icons li:nth-child(2) a::before { content: '\f07a'; }
+
+.navbar1 nav {flex-basis: 73%;}
+.navbar1 a{color: #656366;}
+.search_cart_icons {flex-basis: 10%;}
+
 .navbar2{
+  display: flex;
   background-color: #3361b6;
   padding: 15px 0;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+.navbar2 h2{
+  font-weight: 500;
+  font-size: 22px;
 }
 .navbar2 nav {
-  display: flex;
-  justify-content: space-between;
+  flex-basis: 90%;
+  margin-left: 5%;
 }
 .navbar2 nav ul{
   display: flex;
-  flex-basis: 90%;
 }
 .navbar2 li{
   flex-basis: 19%;
@@ -161,22 +192,46 @@ header .wrapper{
 /*=================================
   main styling starts here
 =================================*/
+main .wrapper{
+  width: 75.85%;
+}
 .banner{
   background-image: url(https://dummyimage.com/1280x500/#26358/0011ff.jpg);
   position: relative;
 }
-
+.home ul {
+  position: absolute;
+  left: 5%;
+  padding: 5px;
+  top: 10px;
+  background: white;
+}
+.home::after {
+  font-family: "Font Awesome 5 Duotone";
+  font-weight: 900;
+} 
 .sales{
   position: absolute;
-  left: 90%;
+  left: 74%;
   background: #000000;
   padding: 15px 0;
   top: 0%;
-  color: #e4e0e6;
+  width: 26%;
 }
-.sales a{
-  display: flex;
-  justify-content: space-between;
+.sales ul{display: flex;}
+.sales li {flex-basis: 50%;}
+.sales a{color: #ddd8d2;}
+.banner.wrapper{
+  position: relative;
+}
+.banner_content{
+  position: absolute;
+  top: 22%;
+  text-align: left;
+}
+.banner_content h3 {
+  font-size: 36px;
+  padding: 1% 0;
 }
 /* digital transformation*/
 .digital-transformation .wrapper{
