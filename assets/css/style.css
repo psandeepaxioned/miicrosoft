@@ -111,17 +111,43 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-h1{
-  font-size: 16px;
-  font-weight: bold;
+header .wrapper{
+  display: flex;
+  flex-direction: column;
 }
-h1 a{ color: #666469;}
 .navbar1{
   display: flex;
-  background-color: aqua;
+  justify-content: space-between;
+  padding: 15px 0;
+  background-color:#fffdff;
 }
-.navbar1 ul li{
-  display: inline-block;
+.navbar1 nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar1 nav {
+  flex-basis: 90%;
+}
+.navbar1 a{
+  color: #656366;
+}
+.navbar2{
+  background-color: #3361b6;
+  padding: 15px 0;
+}
+.navbar2 nav {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar2 nav ul{
+  display: flex;
+  flex-basis: 90%;
+}
+.navbar2 li{
+  flex-basis: 19%;
+}
+.navbar2 a{
+  color: #d5e0f7;
 }
 
 
@@ -135,8 +161,32 @@ h1 a{ color: #666469;}
 /*=================================
   main styling starts here
 =================================*/
+.banner{
+  background-image: url(https://dummyimage.com/1280x500/#26358/0011ff.jpg);
+  position: relative;
+}
 
-
+.sales{
+  position: absolute;
+  left: 90%;
+  background: #000000;
+  padding: 15px 0;
+  top: 0%;
+  color: #e4e0e6;
+}
+.sales a{
+  display: flex;
+  justify-content: space-between;
+}
+/* digital transformation*/
+.digital-transformation .wrapper{
+  display: flex;
+  padding: 80px 0;
+  background: #f1f2f6;
+}
+.digital-transformation .wrapper h3{
+  font-size: 24px;
+}
 
 
 
